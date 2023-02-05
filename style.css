@@ -2,39 +2,84 @@
 
 html,
 body {
-  margin: 0;
-  border: 0;
-  font-family: 'Roboto', sans-serif;
+    margin: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: cadetblue;
 }
 
 .title {
-  padding: 50px 25px;
-  text-align: center;
+    padding: 50px 25px;
+    text-align: center;
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 0;
+    font-size: 3rem;
+    margin: 0;
 }
 
 h4 {
-  font-size: 1.5rem;
-  font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 img {
-  display: block;
+    display: block;
 }
 
+
+.image2 {
+    display: none;
+}
+
+
 @media (min-width: 960px) {
-  .header {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+    .outertitle {
+        /*nevermind won't do anything useful*/
+       
+    }
+
+
+    .header {
+        grid-template-columns: repeat(2, 1fr);
+        
+
+    }
+
+    .title {
+            
+
+
+    }
+
+
+    .image1 {
+        display: none;
+    }
+
+    .squareimagediv{
+        
+    }
+
+    .image2 {
+        display: block;
+        
+        /*This is doing something good keeping the two halves 50% each*/
+        width: 100%;
+        max-width: 480%;
+        height: 100%;
+        max-height: 100%;
+
+        
+        
+    }
+
+
 }
