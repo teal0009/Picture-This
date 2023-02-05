@@ -2,22 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Picture This!</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Picture This!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header class="header">
-    <div class="title">
-      <h1>Picture This!</h1>
-      <h4>My Really Cool Blog Post</h4>
-    </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <header class="header">
+        <div class="outertitle">
+        <div class="title">
+            <h1>Picture This!</h1>
+            <h4>My Really Cool Blog Post</h4>
+        </div>
+        </div>
+        <img src="images/museum.jpg" alt="placeholder" class="image1"
+        
+        srcset="
+        images/museum320.jpg 320w,
+        images/museum480.jpg 480w,
+        images/museum720.jpg 720w">
 
-  </header>
+        <!---->
+        <div class="squareimagediv">
+        <!--Image resolution change part-->
+        <img src="images/museumsquare.jpg" alt="placeholder"
+        class="image2"
+        width="960"
+        
+        style="object-fit: cover;"
+
+
+        srcset="
+        images/museum320.jpg 480w x1,
+        images/museum480.jpg 960w x2,
+        images/museum720.jpg 1280w x3">
+        </div>
+
+
+
+    </header>
 </body>
 
 </html>
